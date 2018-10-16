@@ -1,4 +1,0 @@
-F:\C#\Switch_Config\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
-F:\C#\Switch_Config\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
-F:\C#\Switch_Config\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
-F:\C#\Switch_Config\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
