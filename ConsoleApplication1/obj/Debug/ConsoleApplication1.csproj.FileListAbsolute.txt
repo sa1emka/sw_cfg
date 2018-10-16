@@ -1,0 +1,6 @@
+F:\C#\Switch_Config\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+F:\C#\Switch_Config\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+F:\C#\Switch_Config\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\C#\Switch_Config\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\C#\Switch_Config\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.CodeAnalysisLog.xml
+F:\C#\Switch_Config\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.lastcodeanalysissucceeded

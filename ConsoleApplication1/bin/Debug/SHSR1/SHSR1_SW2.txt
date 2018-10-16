@@ -1,0 +1,65 @@
+admin
+private
+enable
+network protocol none
+network protocol hidiscovery off
+network parms 192.168.97.232 255.255.255.0
+set pre-login-banner text *SWITCH-2*192.168.97.232*
+set pre-login-banner operation
+set clibanner text *SHSR-1*
+set clibanner operation
+vlan database
+vlan 2
+vlan name 2 SKALA
+vlan 3
+vlan name 3 KSKUZ
+exit
+network mgmt_vlan 2
+configure
+shutdown all
+snmp-access version all disable
+no storm-control broadcast
+spanning-tree port mode all
+hiper-ring mode ring-switch
+hiper-ring port primary 1/1
+hiper-ring port secondary 1/2
+hiper-ring recovery-delay 300
+link-aggregation TRUNK
+vlan participation all exclude 1
+vlan participation all include 2
+vlan participation all exclude 3
+vlan port pvid all 2
+interface 1/1
+vlan participation include 1
+vlan participation include 3
+vlan tagging 2
+vlan tagging 3
+vlan pvid 1
+no spanning-tree port mode
+exit
+interface 1/2
+vlan participation include 1
+vlan participation include 3
+vlan tagging 2
+vlan tagging 3
+vlan pvid 1
+no spanning-tree port mode
+exit
+interface 2/1
+vlan tagging 2
+addport 8/1
+exit
+interface 2/2
+vlan tagging 2
+addport 8/1
+exit
+interface 8/1
+vlan tagging 2
+vlan pvid 2
+exit
+no shutdown all
+exit
+copy system:running-config nvram:startup-config
+y
+reboot
+y
